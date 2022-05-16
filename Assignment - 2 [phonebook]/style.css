@@ -21,6 +21,9 @@ h1{
     padding: 0px auto ;
 
     background-color: black;
+
+    height: 90vh;
+    overflow-y: scroll;
 }
 
 
