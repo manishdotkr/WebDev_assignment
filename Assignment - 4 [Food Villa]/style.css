@@ -1,0 +1,259 @@
+*{
+    padding: 0;
+    margin: 0;
+
+    --background-color: #ff9500;
+    --secondary-bg-color: #ff7b00;
+
+}
+
+nav{
+    width: 100vw;
+    background-color: var(--background-color);
+    color: white;
+    /* height: 80px; */
+    padding: 8px 20px;
+
+    position: fixed;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1{
+    font-size: 3rem;
+    margin-left: 80px;
+}
+ul{
+    padding: 0%;
+    width: 40vw;
+    height: 100%;
+    
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin-right: 50px;
+}
+
+a{
+    /* border: 1px solid black; */
+    margin: 10px;
+
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: white;    
+
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* main image  */
+.slider {
+    width: 80vw;
+    height: 90vh;
+
+    margin: 0px auto;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    /* border: 2px solid black; */
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Our Best Cuisine */
+.cuisine{
+    margin:40px auto;
+    text-align: center;
+    font-size: 2rem;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cuisine .container{
+    width: 80vw;
+    margin: 35px auto;
+    display: grid;
+    /* grid-template-columns: repeat( 3 , 1fr); */
+    grid-template-columns: repeat( auto-fill , minmax(300px , 1fr ));
+    grid-auto-rows: 500px;
+    gap: 20px;
+
+    /* border: 2px solid black; */
+}
+.cuisine .container figure{
+    
+    width: 100%;
+    /* border: 2px solid black; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+}
+
+.cuisine .container figure img{
+    height: 60%;
+    margin-bottom: 10px;
+}
+
+.cuisine .container figure figcaption{
+    text-align: left;
+    margin-left: 20px;
+}
+
+.cuisine .container figure h3{
+    font-size: 1.5rem;
+    text-align: left;
+    margin: 0px 20px;
+}
+
+.cuisine .container figure p{
+    font-size: 1rem;
+    text-align: left;
+    margin: 0px 20px;
+}
+
+
+
+/* Contact us  */
+
+.contact{
+    margin:60px auto;
+    text-align: center;
+    font-size: 2rem;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: white;
+}
+
+.contact h2{
+    color: black;
+}
+
+.contact .container{
+    width: 80vw;
+    margin: 50px auto;
+    /* border: 2px solid black; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-auto-rows: 500px;
+    gap: 2px;
+}
+
+.contact .container div{
+    width: 100%;
+    height: 100%;
+    /* background-color: grey; */
+}
+
+.contact .container div:nth-of-type(1){
+    background-color: var(--background-color);
+
+    padding: 30px auto;
+}
+
+.contact .container i{
+    
+    margin-top: 110px;
+    margin-bottom: 20px;
+    font-size: 5rem;
+}
+
+.contact .container div:nth-of-type(1) h6{
+    margin-top: 30px;
+}
+
+.contact .container div:nth-of-type(2){
+    padding: 20px;
+}
+
+.contact .container div:nth-of-type(2) input{
+    border: 1px solid var(--background-color);
+    padding: 8px;
+
+    border-radius: 5px;
+    width: 40%;
+    margin: 0px 20px;
+}
+
+.contact .container div:nth-of-type(2) input:last-of-type{
+    margin-top: 12px ;
+    width: 88%;
+    height: 250px;
+}
+
+.contact .container button{
+    background-color: var(--secondary-bg-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: 90%;
+    height: 40px;
+    margin-top: 20px;
+}
+
+
+/* hover  */
+
+nav a:hover{
+    cursor: pointer;
+    background-color: var(--secondary-bg-color) ;
+}
+
+.contact .container button:hover {
+    background-color: var(--background-color);
+}
+
+
+/* footer   */
+footer{
+    width: 100vw;
+    height: 120px;
+    border: 1px solid black;
+    
+    padding-top: 10px ;
+    
+    background-color: rgb(56, 43, 43);
+}
+footer section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+footer div{
+    position: relative;
+    height: 40px;
+    width: 40px;
+
+    margin: 20px;
+    border: 1.5px solid white;
+    border-radius: 40px;
+
+    background-color: var(--secondary-bg-color);
+}
+
+footer div i{
+    position: absolute;
+    top: 28%;
+    right: 28%;
+
+    font-size: 1.2rem;
+    color: white;
+}
+
+footer h2{
+    text-align: center;
+    color: rgb(24, 21, 21);
+}
+
